@@ -34,8 +34,8 @@ h1 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-    animation: latido 1.5s infinite;
+    font-size: 200px;
+    animation: latido 1.0s infinite;
     filter: drop-shadow(0 0 20px gold);
 }
 
@@ -63,7 +63,7 @@ button {
     border: none;
     border-radius: 30px;
     background: #ffd700;
-    color: #351f00;
+    color: #353500;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -82,11 +82,11 @@ button:hover {
 
 @keyframes latido {
     0%, 100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1.2);
     }
 
     50% {
-        transform: translate(-50%, -50%) scale(1.2);
+        transform: translate(-50%, -50%) scale(1.5);
     }
 }
 
