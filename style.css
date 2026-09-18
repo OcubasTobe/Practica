@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #302000, #050505);
+    color: white;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    position: relative;
+    z-index: 10;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffcc00;
+}
+
+.corazon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    animation: latido 1.5s infinite;
+    filter: drop-shadow(0 0 20px gold);
+}
+
+.mensaje {
+    position: relative;
+    z-index: 10;
+    margin-top: 250px;
+}
+
+.mensaje p {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 8px #ffd700;
+}
+
+button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ffd700;
+    color: #351f00;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ffd700;
+}
+
+button:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+.flor {
+    position: absolute;
+    font-size: 35px;
+    animation: subir 5s linear forwards;
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
